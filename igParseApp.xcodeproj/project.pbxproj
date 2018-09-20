@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAF9179F215451E5006199DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9179E215451E5006199DB /* AppDelegate.swift */; };
+		DAF917A1215451E5006199DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917A0215451E5006199DB /* ViewController.swift */; };
+		DAF917A4215451E5006199DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF917A2215451E5006199DB /* Main.storyboard */; };
+		DAF917A6215451E6006199DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF917A5215451E6006199DB /* Assets.xcassets */; };
+		DAF917A9215451E6006199DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF917A7215451E6006199DB /* LaunchScreen.storyboard */; };
+		DAF917B4215451E6006199DB /* igParseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917B3215451E6006199DB /* igParseAppTests.swift */; };
+		DAF917BF215451E6006199DB /* igParseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917BE215451E6006199DB /* igParseAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAF917B0215451E6006199DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF91793215451E5006199DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF9179A215451E5006199DB;
+			remoteInfo = igParseApp;
+		};
+		DAF917BB215451E6006199DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF91793215451E5006199DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF9179A215451E5006199DB;
+			remoteInfo = igParseApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAF9179B215451E5006199DB /* igParseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = igParseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF9179E215451E5006199DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAF917A0215451E5006199DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAF917A3215451E5006199DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAF917A5215451E6006199DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAF917A8215451E6006199DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAF917AA215451E6006199DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF917AF215451E6006199DB /* igParseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = igParseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF917B3215451E6006199DB /* igParseAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = igParseAppTests.swift; sourceTree = "<group>"; };
+		DAF917B5215451E6006199DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF917BA215451E6006199DB /* igParseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = igParseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF917BE215451E6006199DB /* igParseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = igParseAppUITests.swift; sourceTree = "<group>"; };
+		DAF917C0215451E6006199DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAF91798215451E5006199DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF917AC215451E6006199DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF917B7215451E6006199DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAF91792215451E5006199DB = {
+			isa = PBXGroup;
+			children = (
+				DAF9179D215451E5006199DB /* igParseApp */,
+				DAF917B2215451E6006199DB /* igParseAppTests */,
+				DAF917BD215451E6006199DB /* igParseAppUITests */,
+				DAF9179C215451E5006199DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAF9179C215451E5006199DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9179B215451E5006199DB /* igParseApp.app */,
+				DAF917AF215451E6006199DB /* igParseAppTests.xctest */,
+				DAF917BA215451E6006199DB /* igParseAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAF9179D215451E5006199DB /* igParseApp */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9179E215451E5006199DB /* AppDelegate.swift */,
+				DAF917A0215451E5006199DB /* ViewController.swift */,
+				DAF917A2215451E5006199DB /* Main.storyboard */,
+				DAF917A5215451E6006199DB /* Assets.xcassets */,
+				DAF917A7215451E6006199DB /* LaunchScreen.storyboard */,
+				DAF917AA215451E6006199DB /* Info.plist */,
+			);
+			path = igParseApp;
+			sourceTree = "<group>";
+		};
+		DAF917B2215451E6006199DB /* igParseAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF917B3215451E6006199DB /* igParseAppTests.swift */,
+				DAF917B5215451E6006199DB /* Info.plist */,
+			);
+			path = igParseAppTests;
+			sourceTree = "<group>";
+		};
+		DAF917BD215451E6006199DB /* igParseAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF917BE215451E6006199DB /* igParseAppUITests.swift */,
+				DAF917C0215451E6006199DB /* Info.plist */,
+			);
+			path = igParseAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAF9179A215451E5006199DB /* igParseApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF917C3215451E6006199DB /* Build configuration list for PBXNativeTarget "igParseApp" */;
+			buildPhases = (
+				DAF91797215451E5006199DB /* Sources */,
+				DAF91798215451E5006199DB /* Frameworks */,
+				DAF91799215451E5006199DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = igParseApp;
+			productName = igParseApp;
+			productReference = DAF9179B215451E5006199DB /* igParseApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAF917AE215451E6006199DB /* igParseAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF917C6215451E6006199DB /* Build configuration list for PBXNativeTarget "igParseAppTests" */;
+			buildPhases = (
+				DAF917AB215451E6006199DB /* Sources */,
+				DAF917AC215451E6006199DB /* Frameworks */,
+				DAF917AD215451E6006199DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF917B1215451E6006199DB /* PBXTargetDependency */,
+			);
+			name = igParseAppTests;
+			productName = igParseAppTests;
+			productReference = DAF917AF215451E6006199DB /* igParseAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAF917B9215451E6006199DB /* igParseAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF917C9215451E6006199DB /* Build configuration list for PBXNativeTarget "igParseAppUITests" */;
+			buildPhases = (
+				DAF917B6215451E6006199DB /* Sources */,
+				DAF917B7215451E6006199DB /* Frameworks */,
+				DAF917B8215451E6006199DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF917BC215451E6006199DB /* PBXTargetDependency */,
+			);
+			name = igParseAppUITests;
+			productName = igParseAppUITests;
+			productReference = DAF917BA215451E6006199DB /* igParseAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAF91793215451E5006199DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "PoHung Wang";
+				TargetAttributes = {
+					DAF9179A215451E5006199DB = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DAF917AE215451E6006199DB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DAF9179A215451E5006199DB;
+					};
+					DAF917B9215451E6006199DB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DAF9179A215451E5006199DB;
+					};
+				};
+			};
+			buildConfigurationList = DAF91796215451E5006199DB /* Build configuration list for PBXProject "igParseApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAF91792215451E5006199DB;
+			productRefGroup = DAF9179C215451E5006199DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAF9179A215451E5006199DB /* igParseApp */,
+				DAF917AE215451E6006199DB /* igParseAppTests */,
+				DAF917B9215451E6006199DB /* igParseAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAF91799215451E5006199DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF917A9215451E6006199DB /* LaunchScreen.storyboard in Resources */,
+				DAF917A6215451E6006199DB /* Assets.xcassets in Resources */,
+				DAF917A4215451E5006199DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF917AD215451E6006199DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF917B8215451E6006199DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAF91797215451E5006199DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF917A1215451E5006199DB /* ViewController.swift in Sources */,
+				DAF9179F215451E5006199DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF917AB215451E6006199DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF917B4215451E6006199DB /* igParseAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF917B6215451E6006199DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF917BF215451E6006199DB /* igParseAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAF917B1215451E6006199DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF9179A215451E5006199DB /* igParseApp */;
+			targetProxy = DAF917B0215451E6006199DB /* PBXContainerItemProxy */;
+		};
+		DAF917BC215451E6006199DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF9179A215451E5006199DB /* igParseApp */;
+			targetProxy = DAF917BB215451E6006199DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAF917A2215451E5006199DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF917A3215451E5006199DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAF917A7215451E6006199DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF917A8215451E6006199DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAF917C1215451E6006199DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAF917C2215451E6006199DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAF917C4215451E6006199DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = igParseApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfsu.edu.pwang4.igParseApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAF917C5215451E6006199DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = igParseApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfsu.edu.pwang4.igParseApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAF917C7215451E6006199DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = igParseAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfsu.edu.pwang4.igParseAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/igParseApp.app/igParseApp";
+			};
+			name = Debug;
+		};
+		DAF917C8215451E6006199DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = igParseAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfsu.edu.pwang4.igParseAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/igParseApp.app/igParseApp";
+			};
+			name = Release;
+		};
+		DAF917CA215451E6006199DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = igParseAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfsu.edu.pwang4.igParseAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = igParseApp;
+			};
+			name = Debug;
+		};
+		DAF917CB215451E6006199DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = igParseAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfsu.edu.pwang4.igParseAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = igParseApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAF91796215451E5006199DB /* Build configuration list for PBXProject "igParseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF917C1215451E6006199DB /* Debug */,
+				DAF917C2215451E6006199DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF917C3215451E6006199DB /* Build configuration list for PBXNativeTarget "igParseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF917C4215451E6006199DB /* Debug */,
+				DAF917C5215451E6006199DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF917C6215451E6006199DB /* Build configuration list for PBXNativeTarget "igParseAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF917C7215451E6006199DB /* Debug */,
+				DAF917C8215451E6006199DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF917C9215451E6006199DB /* Build configuration list for PBXNativeTarget "igParseAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF917CA215451E6006199DB /* Debug */,
+				DAF917CB215451E6006199DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAF91793215451E5006199DB /* Project object */;
+}
