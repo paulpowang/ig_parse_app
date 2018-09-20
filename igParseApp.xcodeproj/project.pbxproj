@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B905D3F9301CA22E460C413 /* Pods_igParseAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3123B14BCADF4F73B2EF590 /* Pods_igParseAppTests.framework */; };
+		716164064202B0E50164F1E7 /* Pods_igParseAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84271C80A0C6B00D956C8BBC /* Pods_igParseAppUITests.framework */; };
+		AACD99D1BADFB1D56DE5677F /* Pods_igParseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C8435035E1B0A0E897C737 /* Pods_igParseApp.framework */; };
 		DAF9179F215451E5006199DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9179E215451E5006199DB /* AppDelegate.swift */; };
 		DAF917A1215451E5006199DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917A0215451E5006199DB /* ViewController.swift */; };
 		DAF917A4215451E5006199DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF917A2215451E5006199DB /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		DAF917A9215451E6006199DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF917A7215451E6006199DB /* LaunchScreen.storyboard */; };
 		DAF917B4215451E6006199DB /* igParseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917B3215451E6006199DB /* igParseAppTests.swift */; };
 		DAF917BF215451E6006199DB /* igParseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917BE215451E6006199DB /* igParseAppUITests.swift */; };
+		DAF917CD21545769006199DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917CC21545769006199DB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DE8E292CCD7EAA6266AF9F7 /* Pods-igParseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-igParseApp/Pods-igParseApp.release.xcconfig"; sourceTree = "<group>"; };
+		47C8435035E1B0A0E897C737 /* Pods_igParseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_igParseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		521630D3234CBDD046EF2554 /* Pods-igParseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-igParseApp/Pods-igParseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		743F6B0FBAC8FF0F23FBBB65 /* Pods-igParseAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-igParseAppUITests/Pods-igParseAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84271C80A0C6B00D956C8BBC /* Pods_igParseAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_igParseAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2745456191FFB2D74EB632 /* Pods-igParseAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-igParseAppTests/Pods-igParseAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C79EEDCF488722CE4E800C4F /* Pods-igParseAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-igParseAppTests/Pods-igParseAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3123B14BCADF4F73B2EF590 /* Pods_igParseAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_igParseAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF9179B215451E5006199DB /* igParseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = igParseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF9179E215451E5006199DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF917A0215451E5006199DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,8 @@
 		DAF917BA215451E6006199DB /* igParseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = igParseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF917BE215451E6006199DB /* igParseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = igParseAppUITests.swift; sourceTree = "<group>"; };
 		DAF917C0215451E6006199DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF917CC21545769006199DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC394C03192EDB93E323E321 /* Pods-igParseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-igParseAppUITests/Pods-igParseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACD99D1BADFB1D56DE5677F /* Pods_igParseApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B905D3F9301CA22E460C413 /* Pods_igParseAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716164064202B0E50164F1E7 /* Pods_igParseAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19809A4DE2AC30F61FB212D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				521630D3234CBDD046EF2554 /* Pods-igParseApp.debug.xcconfig */,
+				0DE8E292CCD7EAA6266AF9F7 /* Pods-igParseApp.release.xcconfig */,
+				C79EEDCF488722CE4E800C4F /* Pods-igParseAppTests.debug.xcconfig */,
+				AF2745456191FFB2D74EB632 /* Pods-igParseAppTests.release.xcconfig */,
+				743F6B0FBAC8FF0F23FBBB65 /* Pods-igParseAppUITests.debug.xcconfig */,
+				EC394C03192EDB93E323E321 /* Pods-igParseAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		85182970F71EFBA2F7BBED69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47C8435035E1B0A0E897C737 /* Pods_igParseApp.framework */,
+				D3123B14BCADF4F73B2EF590 /* Pods_igParseAppTests.framework */,
+				84271C80A0C6B00D956C8BBC /* Pods_igParseAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DAF91792215451E5006199DB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				DAF917B2215451E6006199DB /* igParseAppTests */,
 				DAF917BD215451E6006199DB /* igParseAppUITests */,
 				DAF9179C215451E5006199DB /* Products */,
+				19809A4DE2AC30F61FB212D1 /* Pods */,
+				85182970F71EFBA2F7BBED69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +145,7 @@
 				DAF917A5215451E6006199DB /* Assets.xcassets */,
 				DAF917A7215451E6006199DB /* LaunchScreen.storyboard */,
 				DAF917AA215451E6006199DB /* Info.plist */,
+				DAF917CC21545769006199DB /* LoginViewController.swift */,
 			);
 			path = igParseApp;
 			sourceTree = "<group>";
@@ -132,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAF917C3215451E6006199DB /* Build configuration list for PBXNativeTarget "igParseApp" */;
 			buildPhases = (
+				F7367EB31B33039270264F7A /* [CP] Check Pods Manifest.lock */,
 				DAF91797215451E5006199DB /* Sources */,
 				DAF91798215451E5006199DB /* Frameworks */,
 				DAF91799215451E5006199DB /* Resources */,
+				341F989959BD3CA8CFA13052 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAF917C6215451E6006199DB /* Build configuration list for PBXNativeTarget "igParseAppTests" */;
 			buildPhases = (
+				2A27FCB54F39616D8E5DA5F2 /* [CP] Check Pods Manifest.lock */,
 				DAF917AB215451E6006199DB /* Sources */,
 				DAF917AC215451E6006199DB /* Frameworks */,
 				DAF917AD215451E6006199DB /* Resources */,
@@ -167,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAF917C9215451E6006199DB /* Build configuration list for PBXNativeTarget "igParseAppUITests" */;
 			buildPhases = (
+				AB18725917E74F1B34E4DD09 /* [CP] Check Pods Manifest.lock */,
 				DAF917B6215451E6006199DB /* Sources */,
 				DAF917B7215451E6006199DB /* Frameworks */,
 				DAF917B8215451E6006199DB /* Resources */,
@@ -251,11 +298,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A27FCB54F39616D8E5DA5F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-igParseAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		341F989959BD3CA8CFA13052 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-igParseApp/Pods-igParseApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-igParseApp/Pods-igParseApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB18725917E74F1B34E4DD09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-igParseAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7367EB31B33039270264F7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-igParseApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DAF91797215451E5006199DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF917CD21545769006199DB /* LoginViewController.swift in Sources */,
 				DAF917A1215451E5006199DB /* ViewController.swift in Sources */,
 				DAF9179F215451E5006199DB /* AppDelegate.swift in Sources */,
 			);
@@ -428,6 +553,7 @@
 		};
 		DAF917C4215451E6006199DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521630D3234CBDD046EF2554 /* Pods-igParseApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +571,7 @@
 		};
 		DAF917C5215451E6006199DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE8E292CCD7EAA6266AF9F7 /* Pods-igParseApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +589,7 @@
 		};
 		DAF917C7215451E6006199DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79EEDCF488722CE4E800C4F /* Pods-igParseAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +610,7 @@
 		};
 		DAF917C8215451E6006199DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2745456191FFB2D74EB632 /* Pods-igParseAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +631,7 @@
 		};
 		DAF917CA215451E6006199DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743F6B0FBAC8FF0F23FBBB65 /* Pods-igParseAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +651,7 @@
 		};
 		DAF917CB215451E6006199DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC394C03192EDB93E323E321 /* Pods-igParseAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
