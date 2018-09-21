@@ -122,7 +122,7 @@
         <!--New Post-->
         <scene sceneID="efg-nJ-6Dh">
             <objects>
-                <viewController id="Pqs-B6-yz9" sceneMemberID="viewController">
+                <viewController id="Pqs-B6-yz9" customClass="NewPostViewController" customModule="igParseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZyV-46-BQb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
