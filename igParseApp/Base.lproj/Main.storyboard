@@ -65,7 +65,7 @@
         <!--Home Feed-->
         <scene sceneID="t0d-XX-Tda">
             <objects>
-                <viewController id="Ikc-fI-7ja" sceneMemberID="viewController">
+                <viewController id="Ikc-fI-7ja" customClass="HomeViewController" customModule="igParseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8D6-Z6-rPm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,11 @@
                         <viewLayoutGuide key="safeArea" id="d9N-bf-zv7"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Feed" id="Oh3-Ub-cw4">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fgM-Cb-Vf9"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fgM-Cb-Vf9">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="LGs-bX-wm9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="vyB-Yv-xfD">
                             <connections>
                                 <segue destination="B33-Fv-gf8" kind="presentation" id="mao-lc-biQ"/>
@@ -126,7 +130,11 @@
                         <viewLayoutGuide key="safeArea" id="lc8-3C-Wl1"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Post" id="qxt-JD-lLn">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Psd-A8-byw"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Psd-A8-byw">
+                            <connections>
+                                <segue destination="tDN-pS-62E" kind="presentation" id="adL-EU-tT8"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Post" id="tee-Yh-okH"/>
                     </navigationItem>
                 </viewController>
@@ -253,4 +261,7 @@
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="profile_tab" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="adL-EU-tT8"/>
+    </inferredMetricsTieBreakers>
 </document>

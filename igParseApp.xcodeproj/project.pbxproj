@@ -18,6 +18,7 @@
 		DAF917B4215451E6006199DB /* igParseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917B3215451E6006199DB /* igParseAppTests.swift */; };
 		DAF917BF215451E6006199DB /* igParseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917BE215451E6006199DB /* igParseAppUITests.swift */; };
 		DAF917CD21545769006199DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917CC21545769006199DB /* LoginViewController.swift */; };
+		DAF917DD21559380006199DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917DC21559380006199DB /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		DAF917BE215451E6006199DB /* igParseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = igParseAppUITests.swift; sourceTree = "<group>"; };
 		DAF917C0215451E6006199DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAF917CC21545769006199DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DAF917DC21559380006199DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC394C03192EDB93E323E321 /* Pods-igParseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-igParseAppUITests/Pods-igParseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 				DAF917A7215451E6006199DB /* LaunchScreen.storyboard */,
 				DAF917AA215451E6006199DB /* Info.plist */,
 				DAF917CC21545769006199DB /* LoginViewController.swift */,
+				DAF917DC21559380006199DB /* HomeViewController.swift */,
 			);
 			path = igParseApp;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF917DD21559380006199DB /* HomeViewController.swift in Sources */,
 				DAF917CD21545769006199DB /* LoginViewController.swift in Sources */,
 				DAF917A1215451E5006199DB /* ViewController.swift in Sources */,
 				DAF9179F215451E5006199DB /* AppDelegate.swift in Sources */,
