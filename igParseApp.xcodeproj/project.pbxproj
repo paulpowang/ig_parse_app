@@ -20,6 +20,8 @@
 		DAF917CD21545769006199DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917CC21545769006199DB /* LoginViewController.swift */; };
 		DAF917DD21559380006199DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917DC21559380006199DB /* HomeViewController.swift */; };
 		DAF917DF21559C1C006199DB /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917DE21559C1C006199DB /* NewPostViewController.swift */; };
+		DAF917E12155A1DD006199DB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917E02155A1DC006199DB /* Post.swift */; };
+		DAF917E32155AB1F006199DB /* PFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917E22155AB1F006199DB /* PFImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		DAF917CC21545769006199DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DAF917DC21559380006199DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DAF917DE21559C1C006199DB /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		DAF917E02155A1DC006199DB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DAF917E22155AB1F006199DB /* PFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFImageView.swift; sourceTree = "<group>"; };
 		EC394C03192EDB93E323E321 /* Pods-igParseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-igParseAppUITests/Pods-igParseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +156,8 @@
 				DAF917CC21545769006199DB /* LoginViewController.swift */,
 				DAF917DC21559380006199DB /* HomeViewController.swift */,
 				DAF917DE21559C1C006199DB /* NewPostViewController.swift */,
+				DAF917E02155A1DC006199DB /* Post.swift */,
+				DAF917E22155AB1F006199DB /* PFImageView.swift */,
 			);
 			path = igParseApp;
 			sourceTree = "<group>";
@@ -332,11 +338,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-igParseApp/Pods-igParseApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -388,7 +396,9 @@
 			files = (
 				DAF917DD21559380006199DB /* HomeViewController.swift in Sources */,
 				DAF917CD21545769006199DB /* LoginViewController.swift in Sources */,
+				DAF917E32155AB1F006199DB /* PFImageView.swift in Sources */,
 				DAF917A1215451E5006199DB /* ViewController.swift in Sources */,
+				DAF917E12155A1DD006199DB /* Post.swift in Sources */,
 				DAF9179F215451E5006199DB /* AppDelegate.swift in Sources */,
 				DAF917DF21559C1C006199DB /* NewPostViewController.swift in Sources */,
 			);
