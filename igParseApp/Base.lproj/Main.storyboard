@@ -117,11 +117,7 @@
                         <viewLayoutGuide key="safeArea" id="d9N-bf-zv7"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Feed" id="Oh3-Ub-cw4">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fgM-Cb-Vf9">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" id="LGs-bX-wm9"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fgM-Cb-Vf9"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="vyB-Yv-xfD">
                             <connections>
                                 <segue destination="B33-Fv-gf8" kind="presentation" id="mao-lc-biQ"/>
@@ -207,7 +203,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="K83-AR-ca0">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tDN-pS-62E" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="loginSegue" automaticallyAdjustsScrollViewInsets="NO" id="tDN-pS-62E" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f28-lh-AOa">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -306,6 +302,7 @@
         <image name="profile_tab" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="8li-SK-nRm"/>
         <segue reference="adL-EU-tT8"/>
     </inferredMetricsTieBreakers>
 </document>

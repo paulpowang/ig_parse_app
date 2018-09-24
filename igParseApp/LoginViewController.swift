@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         //user logout once reach login view
-        PFUser.logOut()
+        
     }
 
     override func didReceiveMemoryWarning() {
