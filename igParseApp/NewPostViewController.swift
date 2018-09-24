@@ -33,6 +33,9 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     
+    @IBAction func cancelBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func getImageBtn(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {

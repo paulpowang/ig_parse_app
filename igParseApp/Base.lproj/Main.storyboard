@@ -163,7 +163,7 @@
                     <navigationItem key="navigationItem" title="New Post" id="qxt-JD-lLn">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Psd-A8-byw">
                             <connections>
-                                <segue destination="tDN-pS-62E" kind="presentation" id="adL-EU-tT8"/>
+                                <action selector="cancelBtn:" destination="Pqs-B6-yz9" id="2Sa-oG-YXg"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Post" id="tee-Yh-okH">
@@ -301,8 +301,4 @@
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="profile_tab" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="8li-SK-nRm"/>
-        <segue reference="adL-EU-tT8"/>
-    </inferredMetricsTieBreakers>
 </document>
