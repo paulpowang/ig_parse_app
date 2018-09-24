@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 
 class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -16,8 +17,8 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     @IBOutlet weak var photoDescription: UITextField!
     
-    var photo: UIImageView!
-    var resizedPhoto: UIImageView!
+    
+    var resizedPhoto: UIImage!
     var imagePicker = UIImagePickerController()
     
     
@@ -67,11 +68,32 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
-            postPhoto.image = resize(image: image, newSize: CGSize(width: 30, height: 30))
+            resizedPhoto = resize(image: image, newSize: CGSize(width: 30, height: 30))
+            postPhoto.image = resizedPhoto
         }
         dismiss(animated: true, completion: nil)
     }
 
+    
+    /*
+    @IBAction func postBtn(_ sender: Any) {
+        Post.postUserImage(image: resizedPhoto, withCaption: photoDescription.text) { (success: Bool, error: NSError?) -> Void in
+            if success {
+                print("Posted")
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+    }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
