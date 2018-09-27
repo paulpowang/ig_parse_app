@@ -13,97 +13,81 @@ import Parse
 class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
-    @IBOutlet weak var postPhoto: UIImageView!
-    
-    @IBOutlet weak var photoDescription: UITextField!
-    
-    
-    var resizedPhoto: UIImage!
-    var imagePicker = UIImagePickerController()
-    
-    
-    
+    @IBOutlet weak var uploadImage: UIImageView!
+    @IBOutlet weak var captionField: UITextField!
+    var alertController = UIAlertController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imagePicker.delegate = self
-        
-
-        // Do any additional setup after loading the view.
     }
-    
-    
-    @IBAction func cancelBtn(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func getImageBtn(_ sender: Any) {
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            print("Camera is available 📸")
-            imagePicker.sourceType = .camera
-        } else {
-            print("Camera 🚫 available so we will use photo library instead")
-            imagePicker.sourceType = .photoLibrary
-        }
-        //imagePicker.sourceType = .photoLibrary
-        imagePicker.allowsEditing = true
-        present(imagePicker, animated: true, completion: nil)
-    }
-    
-    
-
-    
-    
-    //resizeImage function
-    func resize(image: UIImage, newSize: CGSize) -> UIImage {
-        //let resizeImageView = UIImageView(frame: CGRectMake(0, 0, newSize.width, newSize.height))
-        let resizeImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
-        resizeImageView.contentMode = UIViewContentMode.scaleAspectFill
-        resizeImageView.image = image
-        
-        UIGraphicsBeginImageContext(resizeImageView.frame.size)
-        resizeImageView.layer.render(in: UIGraphicsGetCurrentContext()!)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        return newImage
-    }
-    
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
-            resizedPhoto = resize(image: image, newSize: CGSize(width: 30, height: 30))
-            postPhoto.image = resizedPhoto
-        }
-        dismiss(animated: true, completion: nil)
-    }
-
-    
-    /*
-    @IBAction func postBtn(_ sender: Any) {
-        Post.postUserImage(image: resizedPhoto, withCaption: photoDescription.text) { (success: Bool, error: NSError?) -> Void in
-            if success {
-                print("Posted")
-                self.dismiss(animated: true, completion: nil)
-            }
-        }
-    }*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-
+    //Implement the delegate method
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : Any]) {
+        //Parse has a limit of 10MB for uploading photos so you'll want to the code snippet below to resize the image before uploading to Parse.
+        uploadImage.image = info[UIImagePickerControllerEditedImage] as! UIImage?
+        
+        // Dismiss UIImagePickerController to go back to your original view controller
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func cancelPressBtn(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func selectImage(_ sender: Any) {
+        //Instantiate a UIImagePickerController
+        let vc = UIImagePickerController()
+        vc.delegate = self
+        vc.allowsEditing = true
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            print("Camera is available 📸")
+            vc.sourceType = .camera
+        } else {
+            print("Camera 🚫 available so we will use photo library instead")
+            vc.sourceType = .photoLibrary
+        }
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onUpload(_ sender: Any) {
+        Post.postUserImage(image: uploadImage.image, withCaption: captionField.text, withCompletion: ( { (success, error) in
+            if (success) {
+                self.alertController = UIAlertController(title: "Success", message: "Image Successfully Uploaded", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "Ok", style: .cancel) { (action) in
+                    // handle cancel response here. Doing nothing will dismiss the view.
+                    self.dismiss(animated: true, completion: nil)
+                }
+                self.alertController.addAction(cancelAction)
+                DispatchQueue.global().async(execute: {
+                    DispatchQueue.main.sync{
+                        self.present(self.alertController, animated: true, completion: nil)
+                        
+                    }
+                })
+            } else {
+                // There was a problem, check error.description
+                self.alertController = UIAlertController(title: "Error", message: "\(error?.localizedDescription)", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "Ok", style: .cancel) { (action) in
+                    // handle cancel response here. Doing nothing will dismiss the view.
+                }
+                self.alertController.addAction(cancelAction)
+                DispatchQueue.global().async(execute: {
+                    DispatchQueue.main.sync{
+                        self.present(self.alertController, animated: true, completion: nil)
+                        
+                    }
+                })
+            }
+        }))
+        
+        
+    }
+    
 }
-
-

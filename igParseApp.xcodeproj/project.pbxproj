@@ -10,8 +10,10 @@
 		1B905D3F9301CA22E460C413 /* Pods_igParseAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3123B14BCADF4F73B2EF590 /* Pods_igParseAppTests.framework */; };
 		716164064202B0E50164F1E7 /* Pods_igParseAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84271C80A0C6B00D956C8BBC /* Pods_igParseAppUITests.framework */; };
 		AACD99D1BADFB1D56DE5677F /* Pods_igParseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C8435035E1B0A0E897C737 /* Pods_igParseApp.framework */; };
+		DA070BD6215AD69B00D92DCA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA070BD5215AD69B00D92DCA /* PostCell.swift */; };
+		DA070C54215CA4C800D92DCA /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA070C53215CA4C800D92DCA /* PostDetailViewController.swift */; };
+		DA070C56215CA51100D92DCA /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA070C55215CA51100D92DCA /* TimeStamp.swift */; };
 		DAF9179F215451E5006199DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9179E215451E5006199DB /* AppDelegate.swift */; };
-		DAF917A1215451E5006199DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917A0215451E5006199DB /* ViewController.swift */; };
 		DAF917A4215451E5006199DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF917A2215451E5006199DB /* Main.storyboard */; };
 		DAF917A6215451E6006199DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF917A5215451E6006199DB /* Assets.xcassets */; };
 		DAF917A9215451E6006199DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF917A7215451E6006199DB /* LaunchScreen.storyboard */; };
@@ -21,7 +23,6 @@
 		DAF917DD21559380006199DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917DC21559380006199DB /* HomeViewController.swift */; };
 		DAF917DF21559C1C006199DB /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917DE21559C1C006199DB /* NewPostViewController.swift */; };
 		DAF917E12155A1DD006199DB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917E02155A1DC006199DB /* Post.swift */; };
-		DAF917E32155AB1F006199DB /* PFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917E22155AB1F006199DB /* PFImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +51,11 @@
 		AF2745456191FFB2D74EB632 /* Pods-igParseAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-igParseAppTests/Pods-igParseAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		C79EEDCF488722CE4E800C4F /* Pods-igParseAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-igParseAppTests/Pods-igParseAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3123B14BCADF4F73B2EF590 /* Pods_igParseAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_igParseAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA070BD5215AD69B00D92DCA /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		DA070C53215CA4C800D92DCA /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		DA070C55215CA51100D92DCA /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
 		DAF9179B215451E5006199DB /* igParseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = igParseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF9179E215451E5006199DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAF917A0215451E5006199DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DAF917A3215451E5006199DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAF917A5215451E6006199DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAF917A8215451E6006199DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +70,6 @@
 		DAF917DC21559380006199DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DAF917DE21559C1C006199DB /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		DAF917E02155A1DC006199DB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		DAF917E22155AB1F006199DB /* PFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFImageView.swift; sourceTree = "<group>"; };
 		EC394C03192EDB93E323E321 /* Pods-igParseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igParseAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-igParseAppUITests/Pods-igParseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				DAF9179E215451E5006199DB /* AppDelegate.swift */,
-				DAF917A0215451E5006199DB /* ViewController.swift */,
 				DAF917A2215451E5006199DB /* Main.storyboard */,
 				DAF917A5215451E6006199DB /* Assets.xcassets */,
 				DAF917A7215451E6006199DB /* LaunchScreen.storyboard */,
@@ -157,7 +158,9 @@
 				DAF917DC21559380006199DB /* HomeViewController.swift */,
 				DAF917DE21559C1C006199DB /* NewPostViewController.swift */,
 				DAF917E02155A1DC006199DB /* Post.swift */,
-				DAF917E22155AB1F006199DB /* PFImageView.swift */,
+				DA070BD5215AD69B00D92DCA /* PostCell.swift */,
+				DA070C53215CA4C800D92DCA /* PostDetailViewController.swift */,
+				DA070C55215CA51100D92DCA /* TimeStamp.swift */,
 			);
 			path = igParseApp;
 			sourceTree = "<group>";
@@ -395,12 +398,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF917DD21559380006199DB /* HomeViewController.swift in Sources */,
+				DA070C54215CA4C800D92DCA /* PostDetailViewController.swift in Sources */,
 				DAF917CD21545769006199DB /* LoginViewController.swift in Sources */,
-				DAF917E32155AB1F006199DB /* PFImageView.swift in Sources */,
-				DAF917A1215451E5006199DB /* ViewController.swift in Sources */,
 				DAF917E12155A1DD006199DB /* Post.swift in Sources */,
 				DAF9179F215451E5006199DB /* AppDelegate.swift in Sources */,
 				DAF917DF21559C1C006199DB /* NewPostViewController.swift in Sources */,
+				DA070C56215CA51100D92DCA /* TimeStamp.swift in Sources */,
+				DA070BD6215AD69B00D92DCA /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

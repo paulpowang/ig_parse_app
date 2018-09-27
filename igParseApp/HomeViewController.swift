@@ -9,88 +9,81 @@
 import UIKit
 import Parse
 
-class HomeViewController: UIViewController {
-    /*
-    let post = Post()
-    
-    // get the current user and assign it to "author" field. "author" field is now of Pointer type
-    post.author = PFUser.current()
-    //includeKey("author")
-    
-    // construct query
-    let predicate = NSPredicate(format: "likesCount > 100")
-    var query = Post.query(with: predicate)
-    
-    // fetch data asynchronously
-    query.findObjectsInBackground { (posts: [Post]?, error: Error?) in
-    if let posts = posts {
-    // do something with the array of object returned by the call
-    for post in posts {
-    // access the object as a dictionary and cast type
-    let likeCount = post.likesCount
-    }
-    } else {
-    print(error?.localizedDescription)
-    }
-    }
 
+class HomeViewController: UIViewController,UITableViewDataSource {
     
-
+    @IBOutlet weak var tableView: UITableView!
+    var posts: [PFObject] = []
+    var refreshControl:UIRefreshControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
+        tableView.rowHeight = 300
+        
+        tableView.dataSource = self
+        fetchPost()
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //display recent 20 posts
-    func requestPosts() {
-        let query = PFQuery(className: "Post")
-        query.order(byDescending: "createdAt")
-        query.includeKey("author")
-        query.limit = 20
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostCell
+        cell.instagramPost = posts[indexPath.row]
         
+        return cell
+    }
+    
+    
+    @IBAction func logoutPressButton(_ sender: Any) {
+        PFUser.logOut()
         
+    }
+    
+    
+    func fetchPost(){
         
-        query.findObjectsInBackgroundWithBlock { (posts: [PFObject]?, error: Error?) -> Void in
-            if let posts = posts {
-                print("successed to fetch posts")
+        let query = Post.query()
+        query?.order(byDescending: "createdAt")
+        query?.includeKey("author")
+        query?.limit = 20
+        
+        query?.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let posts = posts {
                 self.posts = posts
-                for i in posts {
-                    print (i)
-                }
-                self.tableView.reloadData()
-
                 
-            } else {
-                print(error?.localizedDescription)
             }
-            } as! ([PFObject]?, Error?) -> Void
+            self.tableView.reloadData()
+        }
+        self.refreshControl.endRefreshing()
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let post = posts[indexPath.row]
+            let detailViewController = segue.destination as! PostDetailViewController
+            detailViewController.post = post
+        }
+        
     }
-    */
-
+    
+    @objc func refreshControlAction(_ refreshControl: UIRefreshControl){
+        fetchPost()
+    }
+    
 }
