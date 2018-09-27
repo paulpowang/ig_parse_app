@@ -23,7 +23,7 @@ class HomeViewController: UIViewController,UITableViewDataSource {
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
-        tableView.rowHeight = 300
+        tableView.rowHeight = 350
         
         tableView.dataSource = self
         fetchPost()
@@ -49,7 +49,7 @@ class HomeViewController: UIViewController,UITableViewDataSource {
     
     @IBAction func logoutPressButton(_ sender: Any) {
         PFUser.logOut()
-        
+        dismiss(animated: true, completion: nil)
     }
     
     
@@ -81,6 +81,7 @@ class HomeViewController: UIViewController,UITableViewDataSource {
         }
         
     }
+    
     
     @objc func refreshControlAction(_ refreshControl: UIRefreshControl){
         fetchPost()

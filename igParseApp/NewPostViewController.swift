@@ -36,9 +36,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     
-    @IBAction func cancelPressBtn(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
-    }
+    
     
     
     @IBAction func selectImage(_ sender: Any) {
@@ -62,7 +60,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
                 self.alertController = UIAlertController(title: "Success", message: "Image Successfully Uploaded", preferredStyle: .alert)
                 let cancelAction = UIAlertAction(title: "Ok", style: .cancel) { (action) in
                     // handle cancel response here. Doing nothing will dismiss the view.
-                    self.dismiss(animated: true, completion: nil)
+                    //self.dismiss(animated: true, completion: nil)
                 }
                 self.alertController.addAction(cancelAction)
                 DispatchQueue.global().async(execute: {
@@ -76,6 +74,8 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
                 self.alertController = UIAlertController(title: "Error", message: "\(error?.localizedDescription)", preferredStyle: .alert)
                 let cancelAction = UIAlertAction(title: "Ok", style: .cancel) { (action) in
                     // handle cancel response here. Doing nothing will dismiss the view.
+                    
+                    
                 }
                 self.alertController.addAction(cancelAction)
                 DispatchQueue.global().async(execute: {
